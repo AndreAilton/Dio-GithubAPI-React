@@ -62,6 +62,11 @@ function App() {
               placeholder="Digite seu nome"
               value={user}
               onChange={(e) => setUser(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  handleGetData();
+                }}}
+
             />
             <Styled.Button onClick={handleGetData}>Buscar</Styled.Button>
           </Styled.ConteudoInfo>
