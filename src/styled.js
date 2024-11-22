@@ -6,6 +6,10 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Content = styled.div`
@@ -18,12 +22,13 @@ export const Content = styled.div`
   background-color: #444;
   box-shadow: -10px 10px 0 #222;
 
-  @media only screen and (min-width: 375px) {
-    max-width: 95%;
-
-    
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
   }
 
+  @media only screen and (min-width: 375px) {
+    max-width: 95%;
+  }
 `;
 
 export const Row = styled.div`
@@ -32,6 +37,10 @@ export const Row = styled.div`
   flex-grow: 1;
   align-items: stretch;
   margin: 0rem 0.5rem;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Block = styled.div`
@@ -46,4 +55,10 @@ export const Block = styled.div`
   box-shadow: -10px 10px 0 #222;
   outline: none;
   padding: 20px;
+
+  @media only screen and (max-width: 768px) {
+    padding: 10px;
+  }
 `;
+
+// Adicione mais estilos aqui...
