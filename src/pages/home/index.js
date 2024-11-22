@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header Nome="props" />
+      <Header Nome="GitHub APi Fetch" />
       <Styled.Conteudo className="background">
         <Styled.Img
           src={background}
